@@ -1,0 +1,240 @@
+{
+    "name": "SLZ Power",
+    "schema_version": "1.0.0",
+    "source": {
+        "source_type": "git_hub",
+        "git": {
+            "git_repo_url": "https://github.com/stevestrutt/Power-SLZ-SAP",
+            "git_repo_folder": "power-sap-blueprint.yaml",
+            "git_branch": "main"
+        }
+    },
+    "config": [
+        {
+            "source": {
+                "source_type": "git_hub",
+                "git": {
+                    "git_repo_url": "https://github.com/stevestrutt/Power-SLZ-SAP",
+                    "git_repo_folder": "slz_inputs.yaml",
+                    "git_branch": "main"
+                }
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "name": "powervs_zone",
+            "value": "$blueprint.powervs_zone"
+        },
+        {
+            "name": "powervs_resource_group_name",
+            "value": "$blueprint.powervs_resource_group_name"
+        },
+        {
+            "name": "powervs_workspace_name",
+            "value": "$blueprint.powervs_workspace_name"
+        },
+        {
+            "name": "tags",
+            "value": "$blueprint.tags"
+        },
+        {
+            "name": "powervs_image_names",
+            "value": "$blueprint.powervs_image_names"
+        },
+        {
+            "name": "powervs_sshkey_name",
+            "value": "$blueprint.powervs_sshkey_name"
+        },
+        {
+            "name": "ssh_public_key",
+            "value": "$blueprint.ssh_public_key"
+        },
+        {
+            "name": "ssh_private_key",
+            "value": "$blueprint.ssh_private_key"
+        },
+        {
+            "name": "powervs_management_network",
+            "value": "$blueprint.powervs_management_network"
+        },
+        {
+            "name": "powervs_backup_network",
+            "value": "$blueprint.powervs_backup_network"
+        },
+        {
+            "name": "transit_gateway_name",
+            "value": "$blueprint.transit_gateway_name"
+        },
+        {
+            "name": "reuse_cloud_connections",
+            "value": "$blueprint.reuse_cloud_connections"
+        },
+        {
+            "name": "cloud_connection_count",
+            "value": "$blueprint.cloud_connection_count"
+        },
+        {
+            "name": "cloud_connection_speed",
+            "value": "$blueprint.cloud_connection_speed"
+        },
+        {
+            "name": "cloud_connection_gr",
+            "value": "$blueprint.cloud_connection_gr"
+        },
+        {
+            "name": "cloud_connection_metered",
+            "value": "$blueprint.cloud_connection_metered"
+        },
+        {
+            "name": "access_host_or_ip",
+            "value": "$blueprint.access_host_or_ip"
+        },
+        {
+            "name": "squid_config",
+            "value": "$blueprint.squid_config"
+        },
+        {
+            "name": "dns_forwarder_config",
+            "value": "$blueprint.dns_forwarder_config"
+        },
+        {
+            "name": "ntp_forwarder_config",
+            "value": "$blueprint.ntp_forwarder_config"
+        },
+        {
+            "name": "nfs_config",
+            "value": "$blueprint.nfs_config"
+        },
+        {
+            "name": "perform_proxy_client_setup",
+            "value": "$blueprint.perform_proxy_client_setup"
+        },
+        {
+            "name": "access_groups",
+            "value": "$blueprint.access_groups"
+        },
+        {
+            "name": "add_kms_block_storage_s2s",
+            "value": "$blueprint.add_kms_block_storage_s2s"
+        },
+        {
+            "name": "appid",
+            "value": "$blueprint.appid"
+        },
+        {
+            "name": "atracker",
+            "value": "$blueprint.atracker"
+        },
+        {
+            "name": "clusters",
+            "value": "$blueprint.clusters"
+        },
+        {
+            "name": "cos",
+            "value": "$blueprint.cos"
+        },
+        {
+            "name": "enable_transit_gateway",
+            "value": "$blueprint.enable_transit_gateway"
+        },
+        {
+            "name": "f5_template_data",
+            "value": "$blueprint.f5_template_data"
+        },
+        {
+            "name": "f5_vsi",
+            "value": "$blueprint.f5_vsi"
+        },
+        {
+            "name": "iam_account_settings",
+            "value": "$blueprint.iam_account_settings"
+        },
+        {
+            "name": "key_management",
+            "value": "$blueprint.key_management"
+        },
+        {
+            "name": "network_cidr",
+            "value": "$blueprint.network_cidr"
+        },
+        {
+            "name": "prefix",
+            "value": "$blueprint.prefix"
+        },
+        {
+            "name": "region",
+            "value": "$blueprint.region"
+        },
+        {
+            "name": "resource_groups",
+            "value": "$blueprint.resource_groups"
+        },
+        {
+            "name": "secrets_manager",
+            "value": "$blueprint.secrets_manager"
+        },
+        {
+            "name": "security_compliance_center",
+            "value": "$blueprint.security_compliance_center"
+        },
+        {
+            "name": "security_groups",
+            "value": "$blueprint.security_groups"
+        },
+        {
+            "name": "service_endpoints",
+            "value": "$blueprint.service_endpoints"
+        },
+        {
+            "name": "ssh_keys",
+            "value": "$blueprint.ssh_keys"
+        },
+        {
+            "name": "tags",
+            "value": "$blueprint.tags"
+        },
+        {
+            "name": "teleport_config_data",
+            "value": "$blueprint.teleport_config_data"
+        },
+        {
+            "name": "teleport_vsi",
+            "value": "$blueprint.teleport_vsi"
+        },
+        {
+            "name": "transit_gateway_connections",
+            "value": "$blueprint.transit_gateway_connections"
+        },
+        {
+            "name": "transit_gateway_resource_group",
+            "value": "$blueprint.transit_gateway_resource_group"
+        },
+        {
+            "name": "virtual_private_endpoints",
+            "value": "$blueprint.virtual_private_endpoints"
+        },
+        {
+            "name": "vpc_placement_groups",
+            "value": "$blueprint.vpc_placement_groups"
+        },
+        {
+            "name": "vpcs",
+            "value": "$blueprint.vpcs"
+        },
+        {
+            "name": "vpn_gateways",
+            "value": "$blueprint.vpn_gateways"
+        },
+        {
+            "name": "vsi",
+            "value": "$blueprint.vsi"
+        },
+        {
+            "name": "wait_till",
+            "value": "$blueprint.wait_till"
+        }
+    ],
+    "description": "Deploys a simple two module blueprint",
+    "resource_group": "Default"
+}

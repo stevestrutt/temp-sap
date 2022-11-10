@@ -1,0 +1,57 @@
+#common inputs
+tags: tags
+  
+# Power VSI inputs
+powervs_zone: $blueprint.powervs_zone
+powervs_resource_group_name: $blueprint.powervs_resource_group_name
+powervs_workspace_name: $blueprint.powervs_workspace_name
+powervs_image_names: $blueprint.powervs_image_names
+powervs_sshkey_name: $blueprint.powervs_sshkey_name
+ssh_public_key: $blueprint.ssh_public_key
+ssh_private_key: $blueprint.ssh_private_key
+powervs_management_network: $blueprint.powervs_management_network
+powervs_backup_network: $blueprint.powervs_backup_network
+transit_gateway_name: $blueprint.transit_gateway_name
+reuse_cloud_connections: $blueprint.reuse_cloud_connections
+cloud_connection_count: $blueprint.cloud_connection_count
+cloud_connection_speed: $blueprint.cloud_connection_speed
+cloud_connection_gr: $blueprint.cloud_connection_gr
+cloud_connection_metered: $blueprint.cloud_connection_metered
+access_host_or_ip: $blueprint.access_host_or_ip
+squid_config: $blueprint.squid_config
+dns_forwarder_config: $blueprint.dns_forwarder_config
+ntp_forwarder_config: $blueprint.ntp_forwarder_config
+nfs_config: $blueprint.nfs_config
+perform_proxy_client_setup: $blueprint.perform_proxy_client_setup
+#
+# Landing zone inputs
+access_groups: access_groups
+add_kms_block_storage_s2s: add_kms_block_storage_s2s
+appid: appid
+atracker: atracker
+clusters: clusters
+cos: cos
+enable_transit_gateway: enable_transit_gateway
+f5_template_data: f5_template_data
+f5_vsi: f5_vsi
+iam_account_settings: iam_account_settings
+key_management: key_management
+network_cidr: network_cidr
+prefix: prefix
+region: region
+resource_groups: resource_groups
+secrets_manager: secrets_manager
+security_compliance_center: security_compliance_center
+security_groups: security_groups
+service_endpoints: service_endpoints
+ssh_keys: ssh_keys
+teleport_config_data: teleport_config_data
+teleport_vsi: teleport_vsi
+transit_gateway_connections: transit_gateway_connections
+transit_gateway_resource_group: transit_gateway_resource_group
+virtual_private_endpoints: virtual_private_endpoints
+vpc_placement_groups: vpc_placement_groups
+vpcs: vpcs
+vpn_gateways: vpn_gateways
+vsi: vsi
+wait_till: wait_till
